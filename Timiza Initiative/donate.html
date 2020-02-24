@@ -13,9 +13,51 @@
 <body>
   <div>
     <nav>
-      <div class="nav-wrapper brown darken-2">
-        <a id="top" href="index.html" class="brand-logo" style="font-family:Roboto">BACK</a>
-      </div></nav></div>
+      <div class="nav-wrapper black" >
+        <a id="top" href="index.html" class="brand-logo" style="font-family:Roboto">TIMIZA INITIATIVE</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+        <li class="brand-logo center" style="padding-top: 7px"><img width="50" hieght="50" src="img/timiza_white.png"></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="volunteer.php">Volunteer</a>
+          </li>
+          <li>
+            <a href="feedback.php">Feedback</a>
+          </li>
+          <li class="active">
+            <a href="donate.html">Donate</a>
+          </li>
+        </ul>
+
+        <!--Side Menu-->
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="volunteer.php">Volunteer</a>
+          </li>
+          <li>
+            <a href="feedback.php">Feedback</a>
+          </li>
+          <li>
+            <a href="donate.html">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <!--Line Separator-->
   <div class="col s12 grey lighten-3" style="height:5px"></div>
@@ -25,9 +67,21 @@
   <!--flow text-->
   <p class="flow-text center-align">This Will Help Put A Smile On A Child's Face</p>
 
+  <!-- Start Donating Option-->
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="flow-text center-align">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="FR9Q4XRG4WYN6" />
+    <input type="image" src="img/donateButton.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" width="10%" hieght ="10%" />
+    <!--<img alt="" border="0" src="img/donateButton.png" width="1" height="1" />-->
+  </form>   
+    <p  class="flow-text center-align" >Alternatively you can scan the QR CODE below</p>
+    <img src="img/qrcode.png" alt="QR CODE" style=" display: block; margin-left: auto; margin-right: auto;">
+  <!--End Donating Option-->
+
     <!--JavaScript Component-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>$(".button-collapse").sideNav();</script> 
 
   </body>
 </html>
